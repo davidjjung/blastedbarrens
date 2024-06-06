@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:splashing",
+  "ingredients": [
+    {
+      "item": "blasted_barrens:ashen_sand"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.035,
+      "count": 1,
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "chance": 0.05,
+      "item": "blasted_barrens:singed_bush"
+    }
+  ]
+}

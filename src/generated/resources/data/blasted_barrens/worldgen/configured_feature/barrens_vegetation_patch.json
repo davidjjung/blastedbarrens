@@ -1,0 +1,41 @@
+{
+  "type": "blasted_barrens:patch_singed_bush",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "blasted_barrens:singed_bush"
+                },
+                "weight": 20
+              },
+              {
+                "data": {
+                  "Name": "blasted_barrens:scorched_grass"
+                },
+                "weight": 8
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 16,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

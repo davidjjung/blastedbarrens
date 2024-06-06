@@ -1,0 +1,9 @@
+// 1.20.1	2024-05-25T08:33:02.0446356	Tags for minecraft:block mod id blasted_barrens
+e141e1d5c52178e68418ff216f2de95b62aab5de data/forge/tags/blocks/sand.json
+e141e1d5c52178e68418ff216f2de95b62aab5de data/forge/tags/blocks/sandstone.json
+e141e1d5c52178e68418ff216f2de95b62aab5de data/forge/tags/blocks/sand/colorless.json
+ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/mineable/pickaxe.json
+ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/overworld_carver_replaceables.json
+e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/sand.json
+ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/sculk_replaceable.json
+ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/sculk_replaceable_world_gen.json

@@ -1,0 +1,8 @@
+{
+  "type": "blasted_barrens:smear_crater",
+  "config": {
+    "state": {
+      "Name": "minecraft:glowstone"
+    }
+  }
+}

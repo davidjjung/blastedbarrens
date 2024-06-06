@@ -1,0 +1,9 @@
+{
+  "levels": [
+    "minecraft:overworld"
+  ],
+  "provider": {
+    "type": "blasted_barrens:slow_noise"
+  },
+  "weight": 200
+}

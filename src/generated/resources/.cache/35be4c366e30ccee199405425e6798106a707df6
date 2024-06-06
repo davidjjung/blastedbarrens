@@ -1,0 +1,3 @@
+// 1.20.1	2024-05-26T10:56:50.795329	Tags for minecraft:worldgen/biome mod id blasted_barrens
+b020f6cdcd2d955793278b2f89a178a1d31e599a data/blasted_barrens/tags/worldgen/biome/has_feature/has_periphery_crater.json
+b020f6cdcd2d955793278b2f89a178a1d31e599a data/blasted_barrens/tags/worldgen/biome/has_feature/has_smear_crater.json

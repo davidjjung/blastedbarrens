@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#blasted_barrens:has_feature/has_periphery_crater",
+  "features": "blasted_barrens:periphery_crater",
+  "step": "local_modifications"
+}
