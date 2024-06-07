@@ -42,7 +42,7 @@ public class BBBiomeSlices {
 //                        .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
 //                        .build(), LevelStem.OVERWORLD));
         context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(200,
-                new SlowNoiseModdedBiomeProvider(0.0001F), LevelStem.OVERWORLD));
+                new SlowNoiseModdedBiomeProvider(0.0000001f), LevelStem.OVERWORLD));
     }
 
     @SuppressWarnings("unchecked")
