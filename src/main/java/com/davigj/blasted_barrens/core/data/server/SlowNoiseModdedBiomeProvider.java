@@ -1,22 +1,18 @@
 package com.davigj.blasted_barrens.core.data.server;
 
 import com.davigj.blasted_barrens.core.registry.BBBiomes;
-import com.google.common.collect.ImmutableSet;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import com.teamabnormals.blueprint.core.registry.BlueprintBiomes;
 import com.teamabnormals.blueprint.core.util.BiomeUtil;
+import net.minecraft.client.CloudStatus;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.BiomeSource;
 import net.minecraft.world.level.biome.Climate;
-import net.minecraft.world.level.levelgen.synth.SimplexNoise;
 import net.minecraftforge.common.Tags;
 
 import java.util.Set;
@@ -30,34 +26,31 @@ public class SlowNoiseModdedBiomeProvider implements BiomeUtil.ModdedBiomeProvid
     });
 
     private final float frequency;
-    private final SimplexNoise simplexNoise;
 
     public SlowNoiseModdedBiomeProvider(float frequency) {
         this.frequency = frequency;
-        this.simplexNoise = new SimplexNoise(RandomSource.create(2048L));
     }
 
     @Override
     public Holder<Biome> getNoiseBiome(int x, int y, int z, Climate.Sampler sampler, BiomeSource original,
                                        Registry<Biome> registry) {
-        if (original.getNoiseBiome(x,y,z,sampler).is(Tags.Biomes.IS_DRY_OVERWORLD)) {
+        if (!original.getNoiseBiome(x,y,z,sampler).is(BiomeTags.IS_OCEAN)) {
             return selectBiomeBasedOnNoise(x, z, registry);
         } else {
             return registry.getHolderOrThrow(BlueprintBiomes.ORIGINAL_SOURCE_MARKER);
         }
     }
 
-    private double combinedNoiseFunction(int x, int z) {
-        return -250 + (500 * Math.sin((Mth.sqrt(Mth.abs(x)) * frequency) - 1.6) * Math.cos((Mth.sqrt(Mth.abs(z)) * frequency)));
-//        double simplexNoiseValue = 500 * simplexNoise.getValue(x * frequency, z * frequency);
-//        return ((trigonometricNoise * 1.9) + (simplexNoiseValue) * 0.1) / 2.0;
+    private double trigNoise(int x, int z) {
+        return -250 + (500 * Math.sin((Mth.sqrt(Mth.abs(x)) * frequency) - 2.44)
+                * Math.cos((Mth.sqrt(Mth.abs(z)) * frequency)));
     }
 
     private Holder<Biome> selectBiomeBasedOnNoise(int x, int z, Registry<Biome> registry) {
-        if (x > 2000 && z < 2000) {
+        if (x > 2000 && z < 2000 || z < 300 || x < 200) {
             return registry.getHolderOrThrow(BlueprintBiomes.ORIGINAL_SOURCE_MARKER);
         }
-        double noiseValue = combinedNoiseFunction(x, z);
+        double noiseValue = trigNoise(x, z);
 
         if (noiseValue > 0) {
             return registry.getHolderOrThrow(BBBiomes.BLASTED_BARRENS);

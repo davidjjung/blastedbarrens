@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:creeper_head"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone_meal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lead"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "blasted_barrens:archaeology/crater_rare"
+}

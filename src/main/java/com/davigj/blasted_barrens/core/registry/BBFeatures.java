@@ -53,9 +53,9 @@ public class BBFeatures {
             register(context, CRATER, BBFeatures.CRATER.get(),
                     new BlockStateConfiguration(Blocks.AIR.defaultBlockState()));
             register(context, SMEAR_CRATER, BBFeatures.SMEAR_CRATER.get(),
-                    new BlockStateConfiguration(Blocks.GLOWSTONE.defaultBlockState()));
+                    new BlockStateConfiguration(Blocks.AIR.defaultBlockState()));
             register(context, PERIPHERY_CRATER, BBFeatures.PERIPHERY_CRATER.get(),
-                    new BlockStateConfiguration(Blocks.DIAMOND_BLOCK.defaultBlockState()));
+                    new BlockStateConfiguration(Blocks.AIR.defaultBlockState()));
         }
 
         public static ResourceKey<ConfiguredFeature<?, ?>> createKey(String name) {

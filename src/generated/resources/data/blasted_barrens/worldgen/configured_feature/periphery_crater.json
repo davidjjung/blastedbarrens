@@ -2,7 +2,7 @@
   "type": "blasted_barrens:periphery_crater",
   "config": {
     "state": {
-      "Name": "minecraft:diamond_block"
+      "Name": "minecraft:air"
     }
   }
 }

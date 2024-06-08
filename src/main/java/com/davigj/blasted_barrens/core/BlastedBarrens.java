@@ -1,6 +1,7 @@
 package com.davigj.blasted_barrens.core;
 
 import com.davigj.blasted_barrens.core.data.server.BBDatapackBuiltInEntriesProvider;
+import com.davigj.blasted_barrens.core.data.server.BBLootTableProvider;
 import com.davigj.blasted_barrens.core.data.server.SlowNoiseModdedBiomeProvider;
 import com.davigj.blasted_barrens.core.data.server.modifiers.BBBiomeModifierProvider;
 import com.davigj.blasted_barrens.core.data.server.modifiers.BBChunkGeneratorModifierProvider;
@@ -91,5 +92,6 @@ public class BlastedBarrens {
 
         generator.addProvider(server, new BBChunkGeneratorModifierProvider(output, provider));
         generator.addProvider(server, new BBBiomeTagsProvider(output, provider, helper));
+        generator.addProvider(server, new BBLootTableProvider(output));
     }
 }

@@ -5,6 +5,7 @@
   "minVersion": "0.8",
   "refmap": "blasted_barrens.refmap.json",
   "mixins": [
+    "BiomeSourceMixin",
     "BubbleColumnBlockMixin",
     "FogLooksGoodNowConfigMixin"
   ],

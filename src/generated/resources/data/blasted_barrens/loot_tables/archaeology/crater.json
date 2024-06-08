@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "blasted_barrens:singed_bush"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "blasted_barrens:archaeology/crater"
+}

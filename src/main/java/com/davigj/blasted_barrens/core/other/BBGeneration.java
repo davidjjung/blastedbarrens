@@ -3,6 +3,7 @@ package com.davigj.blasted_barrens.core.other;
 import com.davigj.blasted_barrens.core.BlastedBarrens;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.biome.OverworldBiomes;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.fml.common.Mod;
@@ -19,11 +20,8 @@ public class BBGeneration {
         BiomeDefaultFeatures.addDefaultSoftDisks(generation);
         BiomeDefaultFeatures.addDefaultFlowers(generation);
         BiomeDefaultFeatures.addDefaultGrass(generation);
-        BiomeDefaultFeatures.addDesertVegetation(generation);
         BiomeDefaultFeatures.addDefaultMushrooms(generation);
-        BiomeDefaultFeatures.addDesertExtraVegetation(generation);
-        BiomeDefaultFeatures.addDesertExtraDecoration(generation);
-
+        generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VegetationPlacements.PATCH_CACTUS_DESERT);
         generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, BARRENS_VEGETATION_PATCH);
     }
 }
