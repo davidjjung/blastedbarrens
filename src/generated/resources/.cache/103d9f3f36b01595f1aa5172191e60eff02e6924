@@ -1,8 +1,8 @@
-// 1.20.1	2024-06-08T13:04:54.2932291	Registries
-36387200d6f1efdb84ff8d01546c53b8036c82b3 data/blasted_barrens/blueprint/modded_biome_slices/barrens.json
+// 1.20.1	2024-06-08T21:32:38.0685449	Registries
+f8708c59959541b809dd67f283e465f4d5c80ea2 data/blasted_barrens/blueprint/modded_biome_slices/barrens.json
 638337d8299bedd19d3d96f211c22aad48bf0b6a data/blasted_barrens/forge/biome_modifier/add_feature/periphery_crater.json
 ab02a2947c20a4978e906056cec786d27a69214d data/blasted_barrens/forge/biome_modifier/add_feature/smear_crater.json
-b50d45958fa679c7a0540a665d445ebd0317a9a7 data/blasted_barrens/worldgen/biome/blasted_barrens.json
+3bb893dc03da2b867c9b8948f471a0361d79266f data/blasted_barrens/worldgen/biome/blasted_barrens.json
 f855bed3fe349887fe2e247c52036f85824dfd71 data/blasted_barrens/worldgen/configured_feature/barrens_vegetation_patch.json
 d24db6d48d49c406d0e522950e85adecdb01fa51 data/blasted_barrens/worldgen/configured_feature/crater.json
 0db6787e5a4f0292bf1314f94ed44b86e0277b66 data/blasted_barrens/worldgen/configured_feature/periphery_crater.json

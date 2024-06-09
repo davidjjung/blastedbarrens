@@ -1,7 +1,6 @@
 package com.davigj.blasted_barrens.core.data;
 
 import com.davigj.blasted_barrens.core.BlastedBarrens;
-import com.davigj.blasted_barrens.core.data.server.SlowNoiseModdedBiomeProvider;
 import com.davigj.blasted_barrens.core.registry.BBBiomes;
 import com.mojang.datafixers.util.Pair;
 import com.teamabnormals.blueprint.common.world.modification.ModdedBiomeSlice;
@@ -13,9 +12,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Climate;
-import net.minecraft.world.level.biome.OverworldBiomeBuilder;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SuspiciousEffectHolder;
 import net.minecraft.world.level.dimension.LevelStem;
 
 import java.util.ArrayList;
@@ -37,12 +33,12 @@ public class BBBiomeSlices {
         List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> entries = new ArrayList<>();
         new CFBiomeBuilder().addBiomes(entries::add);
 
-//        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(5,
-//                BiomeUtil.MultiNoiseModdedBiomeProvider.builder().biomes(entries::forEach)
-//                        .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
-//                        .build(), LevelStem.OVERWORLD));
-        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(200,
-                new SlowNoiseModdedBiomeProvider(0.1f), LevelStem.OVERWORLD));
+        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(15,
+                BiomeUtil.MultiNoiseModdedBiomeProvider.builder().biomes(entries::forEach)
+                        .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
+                        .build(), LevelStem.OVERWORLD));
+//        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(200,
+//                new SlowNoiseModdedBiomeProvider(0.1f), LevelStem.OVERWORLD));
     }
 
     @SuppressWarnings("unchecked")
@@ -92,7 +88,7 @@ public class BBBiomeSlices {
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
-                {BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, VANILLA, VANILLA, VANILLA}
+                {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA}
         };
 
         // Spawns at higher weirdness levels. Based on what parameter
@@ -102,7 +98,7 @@ public class BBBiomeSlices {
                 {null, null, null, null, VANILLA},
                 {VANILLA, null, null, VANILLA, null},
                 {null, null, VANILLA, VANILLA, VANILLA},
-                {null, null, null, null, null}
+                {BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, null, null}
         };
 
         private final ResourceKey<Biome>[][] PLATEAU_BIOMES = new ResourceKey[][]{
