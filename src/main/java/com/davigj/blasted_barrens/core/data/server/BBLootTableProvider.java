@@ -43,7 +43,7 @@ public class BBLootTableProvider extends LootTableProvider {
                     .add(LootItem.lootTableItem(Items.STICK))));
             consumer.accept(BBLootTables.RARE_CRATER_ARCHY, LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                     .add(LootItem.lootTableItem(Items.CREEPER_HEAD))
-                    .add(LootItem.lootTableItem(Items.BONE_MEAL))
+                    .add(LootItem.lootTableItem(Items.TNT))
                     .add(LootItem.lootTableItem(Items.LEAD))
                     .add(LootItem.lootTableItem(Items.EMERALD))
             ));

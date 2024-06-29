@@ -23,9 +23,15 @@ public class BBBlockTagsProvider extends BlockTagsProvider {
         this.tag(Tags.Blocks.SAND).add(ASHEN_SAND.get());
         this.tag(BlockTags.SAND).add(ASHEN_SAND.get());
         this.tag(Tags.Blocks.SAND_COLORLESS).add(ASHEN_SAND.get());
-        this.tag(Tags.Blocks.SANDSTONE).add(ASHEN_SAND.get());
+        this.tag(MINEABLE_WITH_SHOVEL).add(ASHEN_SAND.get());
+        this.tag(DEAD_BUSH_MAY_PLACE_ON).add(ASHEN_SAND.get());
+        this.tag(ENDERMAN_HOLDABLE).add(ASHEN_SAND.get());
+        this.tag(AZALEA_ROOT_REPLACEABLE).add(ASHEN_SAND.get());
+        this.tag(AZALEA_GROWS_ON).add(ASHEN_SAND.get());
+
+        this.tag(Tags.Blocks.SANDSTONE).add(ASHEN_SANDSTONE.get());
         this.tag(MINEABLE_WITH_PICKAXE).add(ASHEN_SANDSTONE.get());
-        this.tag(SCULK_REPLACEABLE).add(ASHEN_SANDSTONE.get());
+        this.tag(SCULK_REPLACEABLE).add(ASHEN_SANDSTONE.get(), ASHEN_SAND.get());
         this.tag(SCULK_REPLACEABLE_WORLD_GEN).add(ASHEN_SANDSTONE.get());
         this.tag(OVERWORLD_CARVER_REPLACEABLES).add(ASHEN_SANDSTONE.get());
     }
