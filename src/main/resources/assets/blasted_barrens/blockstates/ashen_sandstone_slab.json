@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "blasted_barrens:block/ashen_sandstone_slab"
+    },
+    "type=double": {
+      "model": "blasted_barrens:block/ashen_sandstone"
+    },
+    "type=top": {
+      "model": "blasted_barrens:block/ashen_sandstone_slab_top"
+    }
+  }
+}

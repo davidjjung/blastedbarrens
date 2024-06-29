@@ -1,14 +1,17 @@
-// 1.20.1	2024-06-29T12:47:30.3733733	Tags for minecraft:block mod id blasted_barrens
+// 1.20.1	2024-06-29T15:21:21.894811	Tags for minecraft:block mod id blasted_barrens
 e141e1d5c52178e68418ff216f2de95b62aab5de data/forge/tags/blocks/sand.json
-ccbae8c609867eee416491dea5d7f3cdc6defb4b data/forge/tags/blocks/sandstone.json
+22fc0931303c73ab3eaa861e3385abf1feb959be data/forge/tags/blocks/sandstone.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/forge/tags/blocks/sand/colorless.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/azalea_grows_on.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/azalea_root_replaceable.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/dead_bush_may_place_on.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/enderman_holdable.json
-ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/mineable/pickaxe.json
+a8e9946beb04a23bda4373e873bdd082af323652 data/minecraft/tags/blocks/mineable/pickaxe.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/mineable/shovel.json
 ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/overworld_carver_replaceables.json
 e141e1d5c52178e68418ff216f2de95b62aab5de data/minecraft/tags/blocks/sand.json
 7231a6a2a5db41281c10d922eec94f9a86c59a71 data/minecraft/tags/blocks/sculk_replaceable.json
 ccbae8c609867eee416491dea5d7f3cdc6defb4b data/minecraft/tags/blocks/sculk_replaceable_world_gen.json
+b385c2f80fc897b959fa54d5897b23c3f369ca70 data/minecraft/tags/blocks/slabs.json
+2c94cef8398b97bf3952b7162afeb8ea8450bca3 data/minecraft/tags/blocks/stairs.json
+8bcc980bd47884b2a2f5e80255c30c814c42859b data/minecraft/tags/blocks/walls.json

@@ -36,12 +36,26 @@ public class BBBlocks {
     public static final RegistryObject<Block> SCORCHED_GRASS = HELPER.createBlock("scorched_grass", () -> new ScorchedGrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS)));
 
     public static final RegistryObject<Block> ASHEN_SANDSTONE = HELPER.createBlock("ashen_sandstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE).mapColor(MapColor.COLOR_GRAY)));
+    public static final RegistryObject<Block> ASHEN_SANDSTONE_STAIRS = HELPER.createBlock("ashen_sandstone_stairs", () -> new StairBlock(() -> ASHEN_SANDSTONE.get().defaultBlockState(), Block.Properties.copy(Blocks.SANDSTONE_STAIRS).mapColor(MapColor.COLOR_GRAY)));
+    public static final RegistryObject<Block> ASHEN_SANDSTONE_SLAB = HELPER.createBlock("ashen_sandstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.SANDSTONE_SLAB).mapColor(MapColor.COLOR_GRAY)));
+    public static final RegistryObject<Block> ASHEN_SANDSTONE_WALL = HELPER.createBlock("ashen_sandstone_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.SANDSTONE_WALL).mapColor(MapColor.COLOR_GRAY)));
+
+    public static final RegistryObject<Block> CHISELED_ASHEN_SANDSTONE = HELPER.createBlock("chiseled_ashen_sandstone", () -> new Block(BlockBehaviour.Properties.copy(ASHEN_SANDSTONE.get())));
+
+    public static final RegistryObject<Block> SMOOTH_ASHEN_SANDSTONE = HELPER.createBlock("smooth_ashen_sandstone", () -> new Block(BlockBehaviour.Properties.copy(ASHEN_SANDSTONE.get())));
+    public static final RegistryObject<Block> SMOOTH_ASHEN_SANDSTONE_STAIRS = HELPER.createBlock("smooth_ashen_sandstone_stairs", () -> new StairBlock(() -> SMOOTH_ASHEN_SANDSTONE.get().defaultBlockState(), Block.Properties.copy(Blocks.SANDSTONE_STAIRS).mapColor(MapColor.COLOR_GRAY)));
+    public static final RegistryObject<Block> SMOOTH_ASHEN_SANDSTONE_SLAB = HELPER.createBlock("smooth_ashen_sandstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.SANDSTONE_SLAB).mapColor(MapColor.COLOR_GRAY)));
+
+    public static final RegistryObject<Block> CUT_ASHEN_SANDSTONE = HELPER.createBlock("cut_ashen_sandstone", () -> new Block(BlockBehaviour.Properties.copy(ASHEN_SANDSTONE.get())));
+    public static final RegistryObject<Block> CUT_ASHEN_SANDSTONE_SLAB = HELPER.createBlock("cut_ashen_sandstone_slab", () -> new SlabBlock(Block.Properties.copy(Blocks.SANDSTONE_SLAB).mapColor(MapColor.COLOR_GRAY)));
 
     public static void buildCreativeTabContents() {
         CreativeModeTabContentsPopulator.mod(BlastedBarrens.MOD_ID)
                 .tab(NATURAL_BLOCKS).addItemsAfter(of(Blocks.RED_SANDSTONE), ASHEN_SAND, ASHEN_SANDSTONE, SUSPICIOUS_ASHEN_SAND)
-                .tab(BUILDING_BLOCKS).addItemsAfter(of(Blocks.CUT_RED_SANDSTONE_SLAB), ASHEN_SANDSTONE)
                 .tab(NATURAL_BLOCKS).addItemsAfter(of(Blocks.DEAD_BUSH), SINGED_BUSH, SCORCHED_GRASS)
+                .tab(BUILDING_BLOCKS).addItemsAfter(of(Blocks.CUT_RED_SANDSTONE_SLAB), ASHEN_SANDSTONE, ASHEN_SANDSTONE_STAIRS, ASHEN_SANDSTONE_SLAB,
+                        ASHEN_SANDSTONE_WALL, CHISELED_ASHEN_SANDSTONE, SMOOTH_ASHEN_SANDSTONE, SMOOTH_ASHEN_SANDSTONE_STAIRS,
+                        SMOOTH_ASHEN_SANDSTONE_SLAB, CUT_ASHEN_SANDSTONE, CUT_ASHEN_SANDSTONE_SLAB)
         ;
     }
 

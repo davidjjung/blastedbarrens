@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blasted_barrens:block/ashen_sandstone_top",
+    "side": "blasted_barrens:block/chiseled_ashen_sandstone"
+  }
+}

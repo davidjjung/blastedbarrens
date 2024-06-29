@@ -29,10 +29,19 @@ public class BBBlockTagsProvider extends BlockTagsProvider {
         this.tag(AZALEA_ROOT_REPLACEABLE).add(ASHEN_SAND.get());
         this.tag(AZALEA_GROWS_ON).add(ASHEN_SAND.get());
 
-        this.tag(Tags.Blocks.SANDSTONE).add(ASHEN_SANDSTONE.get());
+        this.tag(Tags.Blocks.SANDSTONE).add(ASHEN_SANDSTONE.get(), CHISELED_ASHEN_SANDSTONE.get(), SMOOTH_ASHEN_SANDSTONE.get(),
+                CUT_ASHEN_SANDSTONE.get());
         this.tag(MINEABLE_WITH_PICKAXE).add(ASHEN_SANDSTONE.get());
         this.tag(SCULK_REPLACEABLE).add(ASHEN_SANDSTONE.get(), ASHEN_SAND.get());
         this.tag(SCULK_REPLACEABLE_WORLD_GEN).add(ASHEN_SANDSTONE.get());
         this.tag(OVERWORLD_CARVER_REPLACEABLES).add(ASHEN_SANDSTONE.get());
+
+        this.tag(MINEABLE_WITH_PICKAXE).add(ASHEN_SANDSTONE_STAIRS.get(), ASHEN_SANDSTONE_SLAB.get(), ASHEN_SANDSTONE_WALL.get(),
+                CHISELED_ASHEN_SANDSTONE.get(), SMOOTH_ASHEN_SANDSTONE.get(), SMOOTH_ASHEN_SANDSTONE_SLAB.get(),
+                SMOOTH_ASHEN_SANDSTONE_STAIRS.get(), CUT_ASHEN_SANDSTONE.get(), CUT_ASHEN_SANDSTONE_SLAB.get());
+
+        this.tag(STAIRS).add(ASHEN_SANDSTONE_STAIRS.get(), SMOOTH_ASHEN_SANDSTONE_STAIRS.get());
+        this.tag(SLABS).add(ASHEN_SANDSTONE_SLAB.get(), SMOOTH_ASHEN_SANDSTONE_SLAB.get(), CUT_ASHEN_SANDSTONE_SLAB.get());
+        this.tag(WALLS).add(ASHEN_SANDSTONE_WALL.get());
     }
 }

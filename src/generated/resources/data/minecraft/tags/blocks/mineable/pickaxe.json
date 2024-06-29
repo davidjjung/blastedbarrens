@@ -1,5 +1,14 @@
 {
   "values": [
-    "blasted_barrens:ashen_sandstone"
+    "blasted_barrens:ashen_sandstone",
+    "blasted_barrens:ashen_sandstone_stairs",
+    "blasted_barrens:ashen_sandstone_slab",
+    "blasted_barrens:ashen_sandstone_wall",
+    "blasted_barrens:chiseled_ashen_sandstone",
+    "blasted_barrens:smooth_ashen_sandstone",
+    "blasted_barrens:smooth_ashen_sandstone_slab",
+    "blasted_barrens:smooth_ashen_sandstone_stairs",
+    "blasted_barrens:cut_ashen_sandstone",
+    "blasted_barrens:cut_ashen_sandstone_slab"
   ]
 }

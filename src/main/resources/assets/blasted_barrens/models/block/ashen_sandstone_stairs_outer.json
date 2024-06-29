@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "blasted_barrens:block/ashen_sandstone_bottom",
+    "side": "blasted_barrens:block/ashen_sandstone",
+    "top": "blasted_barrens:block/ashen_sandstone_top"
+  }
+}

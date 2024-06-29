@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "blasted_barrens:block/ashen_sandstone_top"
+  }
+}
