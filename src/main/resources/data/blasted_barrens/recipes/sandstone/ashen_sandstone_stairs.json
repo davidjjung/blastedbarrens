@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": [
+      {
+        "item": "blasted_barrens:ashen_sandstone"
+      },
+      {
+        "item": "blasted_barrens:chiseled_ashen_sandstone"
+      },
+      {
+        "item": "blasted_barrens:cut_ashen_sandstone"
+      }
+    ]
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "blasted_barrens:ashen_sandstone_stairs"
+  },
+  "show_notification": true
+}
