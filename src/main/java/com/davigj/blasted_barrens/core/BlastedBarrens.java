@@ -6,6 +6,7 @@ import com.davigj.blasted_barrens.core.data.server.SlowNoiseModdedBiomeProvider;
 import com.davigj.blasted_barrens.core.data.server.modifiers.BBChunkGeneratorModifierProvider;
 import com.davigj.blasted_barrens.core.data.server.tags.BBBiomeTagsProvider;
 import com.davigj.blasted_barrens.core.data.server.tags.BBBlockTagsProvider;
+import com.davigj.blasted_barrens.core.other.BBClientCompat;
 import com.davigj.blasted_barrens.core.registry.BBBlocks;
 import com.davigj.blasted_barrens.core.registry.BBFeatures;
 import com.davigj.blasted_barrens.core.registry.BBItems;
@@ -66,7 +67,7 @@ public class BlastedBarrens {
 
     private void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-
+            BBClientCompat.registerRenderLayers();
         });
     }
 

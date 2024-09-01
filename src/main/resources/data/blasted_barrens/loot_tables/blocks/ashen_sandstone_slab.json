@@ -11,7 +11,7 @@
               "add": false,
               "conditions": [
                 {
-                  "block": "minecraft:ashen_sandstone_slab",
+                  "block": "blasted_barrens:ashen_sandstone_slab",
                   "condition": "minecraft:block_state_property",
                   "properties": {
                     "type": "double"
@@ -25,11 +25,11 @@
               "function": "minecraft:explosion_decay"
             }
           ],
-          "name": "minecraft:ashen_sandstone_slab"
+          "name": "blasted_barrens:ashen_sandstone_slab"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/ashen_sandstone_slab"
+  "random_sequence": "blasted_barrens:blocks/ashen_sandstone_slab"
 }

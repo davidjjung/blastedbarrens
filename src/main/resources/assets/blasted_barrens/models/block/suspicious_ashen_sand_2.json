@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "blasted_barrens:block/suspicious_ashen_sand_2"
+  }
+}

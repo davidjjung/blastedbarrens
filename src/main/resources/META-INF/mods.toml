@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-issueTrackerURL = ""
+issueTrackerURL = "https://github.com/davidjjung/blastedbarrens/issues"
 license = "MIT License"
 
 [[mods]]
@@ -11,7 +11,7 @@ itemIcon = "blasted_barrens:ashen_sand"
 configBackground = "minecraft:textures/block/dirt.png"
 authors = "DavigJ"
 credits = "Snake Block, Musicano"
-displayURL = ""
+displayURL = "https://modrinth.com/project/blasted-barrens"
 displayName = "Blasted Barrens"
 description = '''
     This mod adds a semi-fantastical biome, the Blasted Barrens.
