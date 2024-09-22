@@ -19,8 +19,8 @@ public class BBItems {
 //    public static final RegistryObject<Item> TEMPLATE_ITEM = HELPER.createItem("template_item", () -> new Item(new Item.Properties()));
 
     public static void buildCreativeTabContents() {
-        CreativeModeTabContentsPopulator.mod(BlastedBarrens.MOD_ID)
-                .tab(FOOD_AND_DRINKS)
+//        CreativeModeTabContentsPopulator.mod(BlastedBarrens.MOD_ID)
+//                .tab(FOOD_AND_DRINKS)
 //                .addItemsAfter(of(Items.APPLE), TEMPLATE_ITEM)
         ;
     }

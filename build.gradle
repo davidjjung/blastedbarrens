@@ -80,6 +80,8 @@ dependencies {
     implementation fg.deobf("com.teamabnormals:blueprint:${project.minecraft}-${project.blueprint}")
     // for Modrinth dependencies: make sure to go to the website and use the URL for the modid, and the version number according to the "Versions" tab
     implementation fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
+    runtimeOnly fg.deobf("maven.modrinth:ferrite-core:6.0.1")
+    runtimeOnly fg.deobf("maven.modrinth:modernfix:m83ZRQdk")
     runtimeOnly fg.deobf("maven.modrinth:collective:MPpjuvwT")
     runtimeOnly fg.deobf("maven.modrinth:world-preview:qFulHiZp")
     runtimeOnly fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")

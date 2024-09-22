@@ -1,0 +1,7 @@
+{
+  "render_type": "cutout",
+  "parent": "block/flower_pot_cross",
+  "textures": {
+    "plant": "blasted_barrens:block/singed_bush"
+  }
+}

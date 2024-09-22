@@ -35,15 +35,15 @@ public class BBBiomeSlices {
     }
 
     public static void bootstrap(BootstapContext<ModdedBiomeSlice> context) {
-//        List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> entries = new ArrayList<>();
-//        new CFBiomeBuilder().addBiomes(entries::add);
+        List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> entries = new ArrayList<>();
+        new CFBiomeBuilder().addBiomes(entries::add);
 
-//        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(15,
-//                BiomeUtil.MultiNoiseModdedBiomeProvider.builder().biomes(entries::forEach)
-//                        .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
-//                        .build(), LevelStem.OVERWORLD));
-        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(78,
-                new SlowNoiseModdedBiomeProvider(0.1f), LevelStem.OVERWORLD));
+        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(15,
+                BiomeUtil.MultiNoiseModdedBiomeProvider.builder().biomes(entries::forEach)
+                        .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
+                        .build(), LevelStem.OVERWORLD));
+//        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(100,
+//                new SlowNoiseModdedBiomeProvider(0.1f), LevelStem.OVERWORLD));
     }
 
     @SuppressWarnings("unchecked")
@@ -93,7 +93,7 @@ public class BBBiomeSlices {
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
-                {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA}
+                {BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, VANILLA, VANILLA}
         };
 
         // Spawns at higher weirdness levels. Based on what parameter
@@ -103,7 +103,7 @@ public class BBBiomeSlices {
                 {null, null, null, null, VANILLA},
                 {VANILLA, null, null, VANILLA, null},
                 {null, null, VANILLA, VANILLA, VANILLA},
-                {BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, null, null}
+                {VANILLA, VANILLA, VANILLA, null, null}
         };
 
         private final ResourceKey<Biome>[][] PLATEAU_BIOMES = new ResourceKey[][]{

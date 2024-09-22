@@ -39,8 +39,8 @@ public class BBBiomes {
 
         MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
         spawns.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.CREEPER, 100, 4, 4));
-        return biome(false, 2.0F, 0.0F, 8749688, 7578511, 7641461,
-                6187392, 1054745, 4867670, spawns, generation, null);
+        return biome(false, 2.0F, 0.0F, 8749688, 11583419, 8493445,
+                6187392, 16250094, 4867670, spawns, generation, null);
     }
 
     private static Biome biome(boolean precipitation, float temperature, float downfall, int skyColor, int grassColor, int foliageColor, int waterColor, int waterFogColor, int fogColor, MobSpawnSettings.Builder spawns, BiomeGenerationSettings.Builder generation, @Nullable Music music) {
