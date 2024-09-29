@@ -12,6 +12,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.BushBlock;
@@ -20,11 +21,15 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.GeodeFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ScorchedGrassBlock extends BushBlock implements BonemealableBlock {
+    protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D);
+
     public ScorchedGrassBlock(Properties p_51021_) {
         super(p_51021_);
     }
@@ -58,5 +63,9 @@ public class ScorchedGrassBlock extends BushBlock implements BonemealableBlock {
                 level.setBlock(randomPos, state, 2);
             }
         }
+    }
+
+    public VoxelShape getShape(BlockState p_52419_, BlockGetter p_52420_, BlockPos p_52421_, CollisionContext p_52422_) {
+        return SHAPE;
     }
 }
