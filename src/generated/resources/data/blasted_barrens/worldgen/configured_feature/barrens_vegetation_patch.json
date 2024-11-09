@@ -12,13 +12,13 @@
                 "data": {
                   "Name": "blasted_barrens:singed_bush"
                 },
-                "weight": 20
+                "weight": 8
               },
               {
                 "data": {
                   "Name": "blasted_barrens:scorched_grass"
                 },
-                "weight": 8
+                "weight": 20
               }
             ]
           }

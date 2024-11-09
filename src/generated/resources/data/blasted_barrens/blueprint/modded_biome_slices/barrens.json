@@ -9,7 +9,7 @@
     },
     "biomes": [
       {
-        "biome": "blueprint:original_source_marker",
+        "biome": "blasted_barrens:blasted_barrens_area",
         "parameters": {
           "continentalness": [
             -1.2,
@@ -22,6 +22,222 @@
           ],
           "humidity": [
             -1.0,
+            -0.35
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blasted_barrens:blasted_barrens_area",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 1.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            -1.0,
+            -0.35
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blasted_barrens:blasted_barrens_area",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 0.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            -0.35,
+            -0.1
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blasted_barrens:blasted_barrens_area",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 1.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            -0.35,
+            -0.1
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blueprint:original_source_marker",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 0.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            -0.1,
+            0.1
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blueprint:original_source_marker",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 1.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            -0.1,
+            0.1
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blueprint:original_source_marker",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 0.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            0.1,
+            0.3
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blueprint:original_source_marker",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 1.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            0.1,
+            0.3
+          ],
+          "offset": 0.0,
+          "temperature": [
+            -1.0,
+            1.0
+          ],
+          "weirdness": [
+            -1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "biome": "blueprint:original_source_marker",
+        "parameters": {
+          "continentalness": [
+            -1.2,
+            -1.05
+          ],
+          "depth": 0.0,
+          "erosion": [
+            -1.0,
+            1.0
+          ],
+          "humidity": [
+            0.3,
             1.0
           ],
           "offset": 0.0,
@@ -48,7 +264,7 @@
             1.0
           ],
           "humidity": [
-            -1.0,
+            0.3,
             1.0
           ],
           "offset": 0.0,
@@ -16317,7 +16533,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16344,7 +16560,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16479,7 +16695,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -16506,7 +16722,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -16641,7 +16857,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16668,7 +16884,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16749,7 +16965,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16776,7 +16992,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -16803,7 +17019,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -16830,7 +17046,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -17073,7 +17289,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17100,7 +17316,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17235,7 +17451,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -17262,7 +17478,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -17397,7 +17613,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17424,7 +17640,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17505,7 +17721,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17532,7 +17748,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17559,7 +17775,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -17586,7 +17802,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -17829,7 +18045,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17856,7 +18072,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -17991,7 +18207,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -18018,7 +18234,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -18153,7 +18369,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -18180,7 +18396,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -18261,7 +18477,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -18288,7 +18504,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -18315,7 +18531,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -18342,7 +18558,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -33975,7 +34191,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34002,7 +34218,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34245,7 +34461,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34272,7 +34488,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34461,7 +34677,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34488,7 +34704,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34515,7 +34731,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34542,7 +34758,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34569,7 +34785,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -34596,7 +34812,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -34623,7 +34839,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34650,7 +34866,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34677,7 +34893,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34704,7 +34920,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34947,7 +35163,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -34974,7 +35190,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35163,7 +35379,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35190,7 +35406,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35217,7 +35433,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35244,7 +35460,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35271,7 +35487,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -35298,7 +35514,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -35325,7 +35541,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35352,7 +35568,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35379,7 +35595,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35406,7 +35622,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35649,7 +35865,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35676,7 +35892,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35865,7 +36081,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35892,7 +36108,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35919,7 +36135,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35946,7 +36162,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -35973,7 +36189,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -36000,7 +36216,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -36027,7 +36243,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -36054,7 +36270,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49527,7 +49743,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49554,7 +49770,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49743,7 +49959,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49770,7 +49986,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49797,7 +50013,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49824,7 +50040,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49851,7 +50067,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -49878,7 +50094,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -49905,7 +50121,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -49932,7 +50148,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50121,7 +50337,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50148,7 +50364,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50337,7 +50553,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50364,7 +50580,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50391,7 +50607,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50418,7 +50634,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50445,7 +50661,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -50472,7 +50688,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -50499,7 +50715,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50526,7 +50742,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50715,7 +50931,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50742,7 +50958,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50931,7 +51147,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50958,7 +51174,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -50985,7 +51201,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -51012,7 +51228,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -51039,7 +51255,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -51066,7 +51282,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -51093,7 +51309,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -51120,7 +51336,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66375,7 +66591,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66402,7 +66618,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66645,7 +66861,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66672,7 +66888,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66861,7 +67077,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66888,7 +67104,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66915,7 +67131,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66942,7 +67158,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -66969,7 +67185,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -66996,7 +67212,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -67023,7 +67239,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67050,7 +67266,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67077,7 +67293,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67104,7 +67320,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67347,7 +67563,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67374,7 +67590,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67563,7 +67779,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67590,7 +67806,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67617,7 +67833,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67644,7 +67860,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67671,7 +67887,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -67698,7 +67914,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -67725,7 +67941,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67752,7 +67968,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67779,7 +67995,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -67806,7 +68022,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68049,7 +68265,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68076,7 +68292,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68265,7 +68481,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68292,7 +68508,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68319,7 +68535,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68346,7 +68562,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68373,7 +68589,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -68400,7 +68616,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -68427,7 +68643,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -68454,7 +68670,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -85599,7 +85815,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -85626,7 +85842,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -85761,7 +85977,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -85788,7 +86004,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -85923,7 +86139,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -85950,7 +86166,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86031,7 +86247,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86058,7 +86274,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86085,7 +86301,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -86112,7 +86328,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -86355,7 +86571,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86382,7 +86598,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86517,7 +86733,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -86544,7 +86760,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -86679,7 +86895,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86706,7 +86922,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86787,7 +87003,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86814,7 +87030,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -86841,7 +87057,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -86868,7 +87084,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -87111,7 +87327,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87138,7 +87354,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87273,7 +87489,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -87300,7 +87516,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.19,
@@ -87435,7 +87651,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87462,7 +87678,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87543,7 +87759,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87570,7 +87786,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -87597,7 +87813,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -87624,7 +87840,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -100557,7 +100773,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100584,7 +100800,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100719,7 +100935,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100746,7 +100962,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100827,7 +101043,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100854,7 +101070,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -100881,7 +101097,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -100908,7 +101124,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -101097,7 +101313,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101124,7 +101340,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101259,7 +101475,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101286,7 +101502,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101367,7 +101583,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101394,7 +101610,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101421,7 +101637,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -101448,7 +101664,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -101637,7 +101853,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101664,7 +101880,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101799,7 +102015,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101826,7 +102042,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101907,7 +102123,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101934,7 +102150,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             -0.11,
@@ -101961,7 +102177,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -101988,7 +102204,7 @@
         }
       },
       {
-        "biome": "blasted_barrens:blasted_barrens_area",
+        "biome": "blueprint:original_source_marker",
         "parameters": {
           "continentalness": [
             0.03,
@@ -203057,5 +203273,5 @@
     ],
     "only_map_from_areas": true
   },
-  "weight": 15
+  "weight": 10000
 }

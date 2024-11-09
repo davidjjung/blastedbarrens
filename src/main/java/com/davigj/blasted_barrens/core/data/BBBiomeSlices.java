@@ -1,22 +1,18 @@
 package com.davigj.blasted_barrens.core.data;
 
 import com.davigj.blasted_barrens.core.BlastedBarrens;
-import com.davigj.blasted_barrens.core.data.server.SlowNoiseModdedBiomeProvider;
 import com.davigj.blasted_barrens.core.registry.BBBiomes;
 import com.mojang.datafixers.util.Pair;
 import com.teamabnormals.blueprint.common.world.modification.ModdedBiomeSlice;
-import com.teamabnormals.blueprint.common.world.modification.ModdedBiomeSource;
 import com.teamabnormals.blueprint.core.registry.BlueprintBiomes;
 import com.teamabnormals.blueprint.core.registry.BlueprintDataPackRegistries;
 import com.teamabnormals.blueprint.core.util.BiomeUtil;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.CheckerboardColumnBiomeSource;
 import net.minecraft.world.level.biome.Climate;
+import net.minecraft.world.level.biome.OverworldBiomeBuilder;
 import net.minecraft.world.level.dimension.LevelStem;
 
 import java.util.ArrayList;
@@ -36,18 +32,16 @@ public class BBBiomeSlices {
 
     public static void bootstrap(BootstapContext<ModdedBiomeSlice> context) {
         List<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> entries = new ArrayList<>();
-        new CFBiomeBuilder().addBiomes(entries::add);
+        new BBBiomeBuilder().addBiomes(entries::add);
 
-        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(15,
+        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(10000,
                 BiomeUtil.MultiNoiseModdedBiomeProvider.builder().biomes(entries::forEach)
                         .area(BLASTED_BARRENS_AREA, BLASTED_BARRENS)
                         .build(), LevelStem.OVERWORLD));
-//        context.register(BLASTED_BARRENS_SLICE, new ModdedBiomeSlice(100,
-//                new SlowNoiseModdedBiomeProvider(0.1f), LevelStem.OVERWORLD));
     }
 
     @SuppressWarnings("unchecked")
-    private static final class CFBiomeBuilder {
+    private static final class BBBiomeBuilder {
         private final Climate.Parameter FULL_RANGE = Climate.Parameter.span(-1.0F, 1.0F);
         private final Climate.Parameter[] temperatures = new Climate.Parameter[]{
                 Climate.Parameter.span(-1.0F, -0.45F),
@@ -93,7 +87,7 @@ public class BBBiomeSlices {
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
                 {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA},
-                {BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, BLASTED_BARRENS_AREA, VANILLA, VANILLA}
+                {VANILLA, VANILLA, VANILLA, VANILLA, VANILLA}
         };
 
         // Spawns at higher weirdness levels. Based on what parameter
@@ -134,7 +128,14 @@ public class BBBiomeSlices {
         }
 
         private void addOffCoastBiomes(Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> p_187196_) {
-            this.addSurfaceBiome(p_187196_, this.FULL_RANGE, this.FULL_RANGE, this.mushroomFieldsContinentalness, this.FULL_RANGE, this.FULL_RANGE, 0.0F, VANILLA);
+            for (int i = 0; i < this.humidities.length; ++i) {
+                Climate.Parameter climate$parameter = this.humidities[i];
+                if (i <= 1) {
+                    this.addSurfaceBiome(p_187196_, this.FULL_RANGE, climate$parameter, this.mushroomFieldsContinentalness, this.FULL_RANGE, this.FULL_RANGE, 0.0F, BLASTED_BARRENS_AREA);
+                } else {
+                    this.addSurfaceBiome(p_187196_, this.FULL_RANGE, climate$parameter, this.mushroomFieldsContinentalness, this.FULL_RANGE, this.FULL_RANGE, 0.0F, VANILLA);
+                }
+            }
 
             for (Climate.Parameter temperature : this.temperatures) {
                 this.addSurfaceBiome(p_187196_, temperature, this.FULL_RANGE, this.deepOceanContinentalness, this.FULL_RANGE, this.FULL_RANGE, 0.0F, VANILLA);

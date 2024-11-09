@@ -48,8 +48,8 @@ public class BBFeatures {
         public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
             register(context, BARRENS_VEGETATION_PATCH, BBFeatures.PATCH_SINGED_BUSH.get(), grassPatch(
                     new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder()
-                            .add(BBBlocks.SINGED_BUSH.get().defaultBlockState(), 20)
-                            .add(BBBlocks.SCORCHED_GRASS.get().defaultBlockState(), 8)), 16));
+                            .add(BBBlocks.SINGED_BUSH.get().defaultBlockState(), 8)
+                            .add(BBBlocks.SCORCHED_GRASS.get().defaultBlockState(), 20)), 16));
             register(context, CRATER, BBFeatures.CRATER.get(),
                     new BlockStateConfiguration(Blocks.AIR.defaultBlockState()));
             register(context, SMEAR_CRATER, BBFeatures.SMEAR_CRATER.get(),
