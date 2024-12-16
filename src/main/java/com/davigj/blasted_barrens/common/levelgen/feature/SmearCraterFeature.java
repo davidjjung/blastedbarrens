@@ -73,24 +73,24 @@ public class SmearCraterFeature extends Feature<BlockStateConfiguration> {
                     int j = randomsource.nextInt(2) + 3;
                     int k = randomsource.nextInt(3 - l) + 3;
                     float f = (float)(i + j + k) * 0.333F + 0.5F;
-                    System.out.println("biomepos: " + biomePos + " blockpos: " +  blockpos);
 
                     for(BlockPos blockpos1 : BlockPos.betweenClosed(blockpos.offset(-i, -j, -k), blockpos.offset(i, j, k))) {
                         if (blockpos1.distSqr(blockpos) <= (double)(f * f)) {
                             if (!worldgenlevel.getBlockState(blockpos1).is(Blocks.WATER)) {
                                 worldgenlevel.setBlock(blockpos1, blockstateconfiguration.state, 3);
-                                if (l == 0 && blockpos1 == blockpos.offset(0,-j + 1,0).immutable()) {
-//                                    System.out.println(blockpos.offset(0,-j,0) + " blockpos1: " + blockpos1);
-                                    worldgenlevel.setBlock(blockpos1.below(), BBBlocks.SUSPICIOUS_ASHEN_SAND.get().defaultBlockState(), 3);
-                                    BlockEntity blockEntity = worldgenlevel.getBlockEntity(blockpos1.below());
+                                if (l == 0) {
+                                    BlockPos bottomOfCrater = blockpos.offset(0, -j, 0).immutable();
+                                    worldgenlevel.setBlock(bottomOfCrater.below(), BBBlocks.SUSPICIOUS_ASHEN_SAND.get().defaultBlockState(), 3);
+                                    BlockEntity blockEntity = worldgenlevel.getBlockEntity(bottomOfCrater.below());
                                     if (blockEntity instanceof BrushableBlockEntity brushable) {
                                         if (randomsource.nextInt(3) == 0) {
-                                            brushable.setLootTable(BBLootTables.RARE_CRATER_ARCHY, blockpos1.asLong());
+                                            brushable.setLootTable(BBLootTables.RARE_CRATER_ARCHY, bottomOfCrater.asLong());
                                         } else {
-                                            brushable.setLootTable(BBLootTables.CRATER_ARCHY, blockpos1.asLong());
+                                            brushable.setLootTable(BBLootTables.CRATER_ARCHY, bottomOfCrater.asLong());
                                         }
                                     }
                                 }
+
                             }
                         }
                     }

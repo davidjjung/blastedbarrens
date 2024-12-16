@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#blasted_barrens:has_feature/has_smear_crater",
-  "features": "blasted_barrens:smear_crater",
-  "step": "local_modifications"
-}

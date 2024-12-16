@@ -78,8 +78,8 @@ sourceSets.main.resources {
 dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
     implementation fg.deobf("com.teamabnormals:blueprint:${project.minecraft}-${project.blueprint}")
-    // for Modrinth dependencies: make sure to go to the website and use the URL for the modid, and the version number according to the "Versions" tab
-    implementation fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
+
+    compileOnly fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
     compileOnly fg.deobf("maven.modrinth:pehkui:SQpqSgAE")
     compileOnly fg.deobf("maven.modrinth:upgrade-aquatic:VUl1Dsmx")
 
@@ -87,6 +87,11 @@ dependencies {
     runtimeOnly fg.deobf("maven.modrinth:modernfix:m83ZRQdk")
     runtimeOnly fg.deobf("maven.modrinth:collective:MPpjuvwT")
     runtimeOnly fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")
+
+    runtimeOnly fg.deobf("maven.modrinth:mru:nKL4LKzM")
+    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
+    runtimeOnly fg.deobf("maven.modrinth:yacl:PI0hRkb0")
+    runtimeOnly fg.deobf("maven.modrinth:architectury-api:1MKTLiiG")
 
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-common-api:${project.jei}")
     compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge-api:${project.jei}")

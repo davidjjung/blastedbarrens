@@ -1,6 +1,7 @@
 package com.davigj.blasted_barrens.core.other;
 
 import com.davigj.blasted_barrens.core.BlastedBarrens;
+import com.davigj.blasted_barrens.core.other.tags.BBEntityTypeTags;
 import com.davigj.blasted_barrens.core.registry.BBBiomes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -18,11 +19,11 @@ public class BBEvents {
 
     @SubscribeEvent
     public static void oofOuchDustInMyEyes(LivingEvent.LivingVisibilityEvent event) {
-        if (event.getLookingEntity() instanceof Creeper creeper) {
-            BlockPos pos = creeper.getOnPos();
-            if (creeper.level().getBiome(pos).is(BBBiomes.BLASTED_BARRENS)) {
+        if (event.getLookingEntity() instanceof LivingEntity living && living.getType().is(BBEntityTypeTags.LOW_VISION)) {
+            BlockPos pos = living.getOnPos();
+            if (living.level().getBiome(pos).is(BBBiomes.BLASTED_BARRENS)) {
                 if (ModList.get().isLoaded("pehkui")) {
-                    if (ScaleTypes.BASE.getScaleData(creeper).getScale() > 1.0F) {
+                    if (ScaleTypes.BASE.getScaleData(living).getScale() > 1.0F) {
                         event.modifyVisibility(1.3);
                         return;
                     }
@@ -35,12 +36,12 @@ public class BBEvents {
     @SubscribeEvent
     public static void creeperVariants(EntityJoinLevelEvent event) {
         if (!ModList.get().isLoaded("pehkui")) return;
-        if (event.getEntity() instanceof Creeper creeper) {
-            BlockPos pos = creeper.getOnPos();
-            RandomSource random = creeper.getRandom();
-            if (creeper.level().getBiome(pos).is(BBBiomes.BLASTED_BARRENS) && random.nextDouble() < 0.125) {
-                ScaleTypes.BASE.getScaleData(creeper).setTargetScale(1.0F + (0.5F * random.nextFloat()));
-                ScaleTypes.MOTION.getScaleData(creeper).setTargetScale(0.75F);
+        if (event.getEntity() instanceof LivingEntity living && living.getType().is(BBEntityTypeTags.RESIZABLE)) {
+            BlockPos pos = living.getOnPos();
+            RandomSource random = living.getRandom();
+            if (living.level().getBiome(pos).is(BBBiomes.BLASTED_BARRENS) && random.nextDouble() < 0.125) {
+                ScaleTypes.BASE.getScaleData(living).setTargetScale(1.0F + (0.5F * random.nextFloat()));
+                ScaleTypes.MOTION.getScaleData(living).setTargetScale(0.75F);
             }
         }
     }

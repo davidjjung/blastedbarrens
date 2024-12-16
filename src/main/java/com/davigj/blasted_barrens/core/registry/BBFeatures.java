@@ -78,7 +78,7 @@ public class BBFeatures {
         public static final ResourceKey<PlacedFeature> PERIPHERY_CRATER = createKey("periphery_crater");
 
         public static void bootstrap(BootstapContext<PlacedFeature> context) {
-            register(context, BARRENS_VEGETATION_PATCH, BBConfiguredFeatures.BARRENS_VEGETATION_PATCH, RarityFilter.onAverageOnceEvery(1),
+            register(context, BARRENS_VEGETATION_PATCH, BBConfiguredFeatures.BARRENS_VEGETATION_PATCH, CountPlacement.of(1),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
             register(context, CRATER, BBConfiguredFeatures.CRATER, RarityFilter.onAverageOnceEvery(2),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());

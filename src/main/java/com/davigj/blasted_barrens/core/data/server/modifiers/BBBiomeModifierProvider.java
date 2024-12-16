@@ -23,7 +23,7 @@ import java.util.stream.Stream;
 public class BBBiomeModifierProvider {
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
-        addFeature(context, "smear_crater", BBBiomeTags.HAS_SMEAR_CRATER, Decoration.LOCAL_MODIFICATIONS, BBFeatures.BBPlacedFeatures.SMEAR_CRATER);
+//        addFeature(context, "smear_crater", BBBiomeTags.HAS_SMEAR_CRATER, Decoration.LOCAL_MODIFICATIONS, BBFeatures.BBPlacedFeatures.SMEAR_CRATER);
         addFeature(context, "periphery_crater", BBBiomeTags.HAS_PERIPHERY_CRATER, Decoration.LOCAL_MODIFICATIONS, BBFeatures.BBPlacedFeatures.PERIPHERY_CRATER);
     }
 
