@@ -1,3 +1,6 @@
-// 1.20.1	2024-05-26T10:56:50.795329	Tags for minecraft:worldgen/biome mod id blasted_barrens
+// 1.20.1	2024-12-24T11:00:03.7933475	Tags for minecraft:worldgen/biome mod id blasted_barrens
 b020f6cdcd2d955793278b2f89a178a1d31e599a data/blasted_barrens/tags/worldgen/biome/has_feature/has_periphery_crater.json
-b020f6cdcd2d955793278b2f89a178a1d31e599a data/blasted_barrens/tags/worldgen/biome/has_feature/has_smear_crater.json
+c2a7bc7a2b075ce2852dfb3e83f7cb89f9a7b383 data/forge/tags/worldgen/biome/is_dry/overworld.json
+c2a7bc7a2b075ce2852dfb3e83f7cb89f9a7b383 data/forge/tags/worldgen/biome/is_rare.json
+c2a7bc7a2b075ce2852dfb3e83f7cb89f9a7b383 data/forge/tags/worldgen/biome/is_wasteland.json
+c2a7bc7a2b075ce2852dfb3e83f7cb89f9a7b383 data/forge/tags/worldgen/biome/no_default_monsters.json

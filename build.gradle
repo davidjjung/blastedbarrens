@@ -89,7 +89,7 @@ dependencies {
     runtimeOnly fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")
 
     runtimeOnly fg.deobf("maven.modrinth:mru:nKL4LKzM")
-    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
+//    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
     runtimeOnly fg.deobf("maven.modrinth:yacl:PI0hRkb0")
     runtimeOnly fg.deobf("maven.modrinth:architectury-api:1MKTLiiG")
 
