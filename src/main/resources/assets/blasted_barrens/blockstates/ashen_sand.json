@@ -1,7 +1,21 @@
 {
   "variants": {
-    "": {
-      "model": "blasted_barrens:block/ashen_sand"
-    }
+    "": [
+      {
+        "model": "blasted_barrens:block/ashen_sand"
+      },
+      {
+        "model": "blasted_barrens:block/ashen_sand",
+        "y": 90
+      },
+      {
+        "model": "blasted_barrens:block/ashen_sand",
+        "y": 180
+      },
+      {
+        "model": "blasted_barrens:block/ashen_sand",
+        "y": 270
+      }
+    ]
   }
 }
