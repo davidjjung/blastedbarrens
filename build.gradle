@@ -79,6 +79,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
     implementation fg.deobf("com.teamabnormals:blueprint:${project.minecraft}-${project.blueprint}")
 
+    implementation fg.deobf("maven.modrinth:blueprint:7.1.0")
+
     compileOnly fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
     compileOnly fg.deobf("maven.modrinth:pehkui:SQpqSgAE")
     compileOnly fg.deobf("maven.modrinth:upgrade-aquatic:VUl1Dsmx")
@@ -89,7 +91,7 @@ dependencies {
     runtimeOnly fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")
 
     runtimeOnly fg.deobf("maven.modrinth:mru:nKL4LKzM")
-//    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
+    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
     runtimeOnly fg.deobf("maven.modrinth:yacl:PI0hRkb0")
     runtimeOnly fg.deobf("maven.modrinth:architectury-api:1MKTLiiG")
 

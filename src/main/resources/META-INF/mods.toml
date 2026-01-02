@@ -20,7 +20,7 @@ description = '''
 [[dependencies.blasted_barrens]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,1.21)"
+versionRange = "[1.20.1,1.20.2)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -35,5 +35,54 @@ side = "BOTH"
 modId = "blueprint"
 mandatory = true
 versionRange = "[7.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "clayworks"
+mandatory = false
+versionRange = "[3.0.4,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "fog"
+mandatory = false
+versionRange = "[1.5.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "supplementaries"
+mandatory = false
+versionRange = "[3.1.41,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "foglooksmodernnow"
+mandatory = false
+versionRange = "[1.2.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "create"
+mandatory = false
+versionRange = "[6.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "upgrade_aquatic"
+mandatory = false
+versionRange = "[6.0.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "pehkui"
+mandatory = false
+versionRange = "[3.8.2,)"
 ordering = "AFTER"
 side = "BOTH"
