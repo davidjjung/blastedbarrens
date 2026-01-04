@@ -5,6 +5,7 @@ import net.shizotoaster.foglooksmodernnow.client.FogManager;
 import net.shizotoaster.foglooksmodernnow.config.FogLooksGoodNowConfig;
 import org.apache.commons.lang3.tuple.Pair;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -12,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.ArrayList;
 import java.util.List;
 
+@Pseudo
 @Mixin(targets = "net.shizotoaster.foglooksmodernnow.config.FogLooksGoodNowConfig")
 public class FogLooksGoodNowConfigMixin {
     @Inject(method = "getDensityConfigs", at = @At("HEAD"), remap = false, cancellable = true)

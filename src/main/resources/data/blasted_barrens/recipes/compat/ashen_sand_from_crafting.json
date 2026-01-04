@@ -8,15 +8,31 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:ash",
-      "count": 2
+      "tag": "forge:ash"
+    },
+    {
+      "tag": "forge:ash"
     },
     {
       "item": "minecraft:gunpowder"
     },
     {
-      "tag": "forge:sand/colorless",
-      "count": 6
+      "tag": "forge:sand/colorless"
+    },
+    {
+      "tag": "forge:sand/colorless"
+    },
+    {
+      "tag": "forge:sand/colorless"
+    },
+    {
+      "tag": "forge:sand/colorless"
+    },
+    {
+      "tag": "forge:sand/colorless"
+    },
+    {
+      "tag": "forge:sand/colorless"
     }
   ],
   "result": {
