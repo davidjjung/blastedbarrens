@@ -7,7 +7,9 @@
   "mixins": [
     "BlockEntityTypeMixin",
     "BubbleColumnBlockMixin",
-    "FogLooksGoodNowConfigMixin"
+    "LevelChunkSectionAccessor",
+    "LocateCommandMixin",
+    "VanillaRegistriesMixin"
   ],
   "client": [
   ],

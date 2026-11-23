@@ -1,19 +1,33 @@
 package com.davigj.blasted_barrens.common.block;
 
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class AshenSandBlock extends FallingBlock {
-    private final int dustColor;
+    public static final MapCodec<AshenSandBlock> CODEC = RecordCodecBuilder.mapCodec(
+            p_308812_ -> p_308812_.group(ColorRGBA.CODEC.fieldOf("falling_dust_color").forGetter(p_304722_ -> p_304722_.dustColor), propertiesCodec())
+                    .apply(p_308812_, AshenSandBlock::new)
+    );
+    private final ColorRGBA dustColor;
 
-    public AshenSandBlock(int color, Properties p_53205_) {
-        super(p_53205_);
-        this.dustColor = color;
+    public AshenSandBlock(ColorRGBA dustColor, BlockBehaviour.Properties properties) {
+        super(properties);
+        this.dustColor = dustColor;
     }
 
-    public int getDustColor(BlockState p_55970_, BlockGetter p_55971_, BlockPos p_55972_) {
-        return this.dustColor;
+    @Override
+    protected MapCodec<? extends FallingBlock> codec() {
+        return CODEC;
+    }
+
+    @Override
+    public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
+        return this.dustColor.rgba();
     }
 }

@@ -12,8 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class BlockEntityTypeMixin {
     @Inject(at = @At("HEAD"), method = "isValid", cancellable = true)
     private void S$isValid(BlockState blockState, CallbackInfoReturnable<Boolean> cir) {
-        if (blockState.is(BBBlocks.SUSPICIOUS_ASHEN_SAND.get()) && BlockEntityType.BRUSHABLE_BLOCK.equals(this)) {
-            cir.setReturnValue(true);
-        }
+//        if (blockState.is(BBBlocks.SUSPICIOUS_ASHEN_SAND.get()) && BlockEntityType.BRUSHABLE_BLOCK.equals(this)) {
+//            cir.setReturnValue(true);
+//        }
     }
 }

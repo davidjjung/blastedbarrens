@@ -1,0 +1,56 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/davidjjung/blastedbarrens/issues"
+license = "MIT License"
+
+[[mixins]]
+config = "blasted_barrens.mixins.json"
+
+[[mods]]
+modId = "blasted_barrens"
+version = "${mod_version}"
+logoFile = "logo.png"
+itemIcon = "blasted_barrens:ashen_sand"
+configBackground = "minecraft:textures/block/dirt.png"
+authors = "DavigJ"
+credits = "Snake Block, Musicano, Ninni"
+displayURL = "https://modrinth.com/project/blasted-barrens"
+displayName = "Blasted Barrens"
+description = '''
+    Adds a semi-fantastical biome, the Blasted Barrens.
+    '''
+
+[[dependencies.blasted_barrens]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${mc_version}]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "neoforge"
+type = "required"
+versionRange = "[${neoforge},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "blueprint"
+type = "required"
+versionRange = "[8.1.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "clayworks"
+type = "optional"
+versionRange = "[4.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.blasted_barrens]]
+modId = "spawn"
+type = "optional"
+versionRange = "[4.0.8,)"
+ordering = "AFTER"
+side = "BOTH"

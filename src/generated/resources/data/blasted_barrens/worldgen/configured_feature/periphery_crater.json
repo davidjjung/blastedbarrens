@@ -1,8 +1,0 @@
-{
-  "type": "blasted_barrens:periphery_crater",
-  "config": {
-    "state": {
-      "Name": "minecraft:air"
-    }
-  }
-}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "blasted_barrens:ashen_sandstone",
+    "blasted_barrens:chiseled_ashen_sandstone",
+    "blasted_barrens:smooth_ashen_sandstone",
+    "blasted_barrens:cut_ashen_sandstone"
+  ]
+}

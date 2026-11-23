@@ -1,25 +1,25 @@
 package com.davigj.blasted_barrens.core;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;
 
 public class BBConfig {
     public static class Common {
-//        public final ForgeConfigSpec.ConfigValue<Boolean> configExists;
+//        public final ModConfigSpec.ConfigValue<Boolean> configExists;
 
-        Common (ForgeConfigSpec.Builder builder) {
-            builder.push("changes");
+        Common (ModConfigSpec.Builder builder) {
+            builder.push("common");
 //            configExists = builder.comment("Does the template config exist").define("Config exists", true);
             builder.pop();
         }
     }
 
-    static final ForgeConfigSpec COMMON_SPEC;
+    static final ModConfigSpec COMMON_SPEC;
     public static final BBConfig.Common COMMON;
 
 
     static {
-        final Pair<Common, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(BBConfig.Common::new);
+        final Pair<Common, ModConfigSpec> specPair = new ModConfigSpec.Builder().configure(BBConfig.Common::new);
         COMMON_SPEC = specPair.getRight();
         COMMON = specPair.getLeft();
     }

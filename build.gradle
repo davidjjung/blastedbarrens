@@ -1,73 +1,42 @@
-buildscript {
-    repositories {
-        maven { url = "https://files.minecraftforge.net/maven" }
-        maven { url = "https://repo.spongepowered.org/repository/maven-public/" }
-    }
-    dependencies {
-        classpath group: "net.minecraftforge.gradle", name: "ForgeGradle", version: "6.0.+", changing: true
-        classpath group: "org.spongepowered", name: "mixingradle", version: "0.7-SNAPSHOT"
-    }
+plugins {
+    id "java-library"
+    id "idea"
+    id "maven-publish"
+    id "net.neoforged.gradle.userdev" version "7.0.182"
 }
 
-apply plugin: "net.minecraftforge.gradle"
-apply plugin: "eclipse"
-apply plugin: "maven-publish"
-apply plugin: "org.spongepowered.mixin"
-
-mixin {
-    add sourceSets.main, "${project.modId}.refmap.json"
-}
-
-version = "${project.minecraft}-${project.modVersion}"
+version = "${project.mc_version}-${project.mod_version}"
 group = "com.davigj"
-archivesBaseName = project.modId
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+base {
+    archivesName = project.mod_id
+}
 
-minecraft {
-    mappings channel: "official", version: project.minecraft
-    accessTransformer = file("src/main/resources/META-INF/accesstransformer.cfg")
-    runs {
-        client {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            arg "-mixin.config=" + project.modId + ".mixins.json"
-            mods {
-                blasted_barrens {
-                    source sourceSets.main
-                }
-            }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+minecraft.accessTransformers.file rootProject.file("src/main/resources/META-INF/accesstransformer.cfg")
+
+runs {
+    configureEach {
+        systemProperty "forge.logging.markers", "REGISTRIES"
+        systemProperty "forge.logging.console.level", "debug"
+    }
+    client {
+        modSources {
+            add project.sourceSets.main
         }
-        server {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            arg "-mixin.config=" + project.modId + ".mixins.json"
-            mods {
-                blasted_barrens {
-                    source sourceSets.main
-                }
-            }
+    }
+    server {
+        modSources {
+            add project.sourceSets.main
         }
-        data {
-            workingDirectory project.file("run")
-            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
-            property "forge.logging.console.level", "debug"
-            property "mixin.env.remapRefMap", "true"
-            property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-            property "blueprint.indev", "true"
-            args "--mod", project.modId, "--all", "--output", file("src/generated/resources/"), "--existing", file("src/main/resources"), "--existing-mod", "blueprint"
-            mods {
-                blasted_barrens {
-                    source sourceSets.main
-                }
-            }
+    }
+    data {
+        modSources {
+            add project.sourceSets.main
         }
+        arguments.addAll "--mod", project.mod_id, "--all", "--output", file("src/generated/resources/").getAbsolutePath(), "--existing",
+                file("src/main/resources").getAbsolutePath(),
+                "--existing-mod", "blueprint"
     }
 }
 
@@ -76,65 +45,70 @@ sourceSets.main.resources {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${project.minecraft}-${project.forge}"
-    implementation fg.deobf("maven.modrinth:blueprint:7.1.0")
+    implementation "net.neoforged:neoforge:${project.neoforge}"
+    implementation("maven.modrinth:blueprint:5JOCYuQM")
 
-    compileOnly fg.deobf("maven.modrinth:fog-looks-modern-now:Xi8khBA6")
-    compileOnly fg.deobf("maven.modrinth:pehkui:SQpqSgAE")
-    compileOnly fg.deobf("maven.modrinth:upgrade-aquatic:VUl1Dsmx")
+    implementation("maven.modrinth:spawn-mod:OgmUYgeL")
+    implementation("maven.modrinth:teallib:lZTBRemW")
 
-    runtimeOnly fg.deobf("maven.modrinth:ferrite-core:6.0.1")
-    runtimeOnly fg.deobf("maven.modrinth:modernfix:m83ZRQdk")
-    runtimeOnly fg.deobf("maven.modrinth:collective:MPpjuvwT")
-    runtimeOnly fg.deobf("maven.modrinth:biome-spawn-point:USEni5nA")
+    compileOnly("maven.modrinth:upgrade-aquatic:7.0.2")
+    compileOnly("maven.modrinth:pehkui:nKHizsl6")
 
-    runtimeOnly fg.deobf("maven.modrinth:mru:nKL4LKzM")
-    runtimeOnly fg.deobf("maven.modrinth:fog:5Lmz97Q7")
-    runtimeOnly fg.deobf("maven.modrinth:yacl:PI0hRkb0")
-    runtimeOnly fg.deobf("maven.modrinth:architectury-api:1MKTLiiG")
-    runtimeOnly fg.deobf("maven.modrinth:supplementaries:LAQ22yJj")
-    runtimeOnly fg.deobf("maven.modrinth:moonlight:ZBeK8kT5")
-    runtimeOnly fg.deobf("maven.modrinth:pehkui:SQpqSgAE")
-    runtimeOnly fg.deobf("maven.modrinth:clayworks:3.0.4")
-    runtimeOnly fg.deobf("maven.modrinth:immersive-overlays:AWXOnUu4")
+    compileOnly("mezz.jei:jei-${project.mc_version}-neoforge-api:${project.jei}")
+    runtimeOnly("mezz.jei:jei-${project.mc_version}-neoforge:${project.jei}")
+}
 
-    compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-common-api:${project.jei}")
-    compileOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge-api:${project.jei}")
-    runtimeOnly fg.deobf("mezz.jei:jei-${project.minecraft}-forge:${project.jei}")
-
-    annotationProcessor "org.spongepowered:mixin:0.8.5:processor"
+subsystems {
+    parchment {
+        minecraftVersion = "${project.mc_version}"
+        mappingsVersion = "${project.parchment}"
+    }
 }
 
 repositories {
-    maven { url "https://maven.jaackson.me" }
-    maven { url "https://dvs1.progwml6.com/files/maven/" }
-    maven { url "https://modmaven.k-4u.nl" }
-    maven { url "https://www.cursemaven.com" }
-    exclusiveContent {
-        forRepository {
-            maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
-            }
+    maven { url = "https://maven.blamejared.com/" }
+    maven { url = "https://modmaven.dev" }
+    maven { url = "https://api.modrinth.com/maven" }
+}
+
+tasks.withType(ProcessResources).configureEach {
+    var replaceProperties = [mod_version: mod_version, mc_version: mc_version, neoforge: neoforge]
+    inputs.properties replaceProperties
+    filesMatching(["META-INF/neoforge.mods.toml"]) {
+        expand replaceProperties
+    }
+}
+
+tasks.named("jar", Jar).configure {
+    manifest {
+        attributes([
+                "Specification-Title"     : project.mod_name,
+                "Specification-Vendor"    : "DavigJ",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.mod_name,
+                "Implementation-Version"  : project.mod_version,
+                "Implementation-Vendor"   : "DavigJ",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            artifact jar
         }
-        forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
-        filter {
-            includeGroup "maven.modrinth"
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/repo"
         }
     }
 }
 
-jar {
-    manifest {
-        attributes([
-                "Specification-Title"     : project.modName,
-                "Specification-Vendor"    : "DavigJ",
-                "Specification-Version"   : "1",
-                "Implementation-Title"    : project.modName,
-                "Implementation-Version"  : project.modVersion,
-                "Implementation-Vendor"   : "DavigJ",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                "MixinConfigs"            : project.modId + ".mixins.json"
-        ])
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
     }
 }

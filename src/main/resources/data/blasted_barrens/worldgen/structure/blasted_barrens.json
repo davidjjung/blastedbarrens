@@ -1,0 +1,9 @@
+{
+  "type": "blasted_barrens:blasted_barrens_island",
+  "island_biome": "blasted_barrens:blasted_barrens",
+  "biomes": "minecraft:deep_ocean",
+  "step": "surface_structures",
+  "dimension": "minecraft:overworld",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}

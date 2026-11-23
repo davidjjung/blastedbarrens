@@ -1,8 +1,8 @@
 package com.davigj.blasted_barrens.core.data.server.modifiers;
 
 import com.davigj.blasted_barrens.core.BlastedBarrens;
-import com.davigj.blasted_barrens.core.registry.BBBiomes;
 import com.davigj.blasted_barrens.core.registry.BBBlocks;
+import com.davigj.blasted_barrens.core.registry.BBBiomes;
 import com.teamabnormals.blueprint.common.world.modification.chunk.ChunkGeneratorModifierProvider;
 import com.teamabnormals.blueprint.common.world.modification.chunk.modifiers.SurfaceRuleModifier;
 import net.minecraft.core.HolderLookup;
