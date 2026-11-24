@@ -281,20 +281,29 @@ public class BarrensPiece extends StructurePiece {
 
     public void decorateIsland(BlockPos pos, RandomSource randomSource, RandomSource islandRandom, ChunkGenerator chunkGenerator, WorldGenLevel level, Holder<Biome> biomeHolder) {
         BlockState baseState = this.getBaseState();
-        BlockState surfaceState = BBBlocks.ASHEN_SAND.get().defaultBlockState();
-        if (level.getBlockState(pos.above()).is(baseState.getBlock())) {
+        BlockState sand = BBBlocks.ASHEN_SAND.get().defaultBlockState();
+        BlockState sandstone = BBBlocks.ASHEN_SANDSTONE.get().defaultBlockState();
+        if (!level.getBlockState(pos).is(baseState.getBlock())) {
             return;
         }
-        for (int depth = 0; depth < 3; ++depth) {
-            BlockPos surfacePos = pos.below(depth);
-            if (!level.getBlockState(surfacePos).is(baseState.getBlock())) {
-                break;
+        boolean exposedTop = !level.getBlockState(pos.above()).is(baseState.getBlock());
+        boolean exposedCeiling = level.getBlockState(pos.above()).is(baseState.getBlock()) && !level.getBlockState(pos.below()).is(baseState.getBlock());
+        if (exposedTop) {
+            for (int depth = 0; depth < 3; ++depth) {
+                BlockPos surfacePos = pos.below(depth);
+                if (!level.getBlockState(surfacePos).is(baseState.getBlock())) {
+                    break;
+                }
+                level.setBlock(surfacePos, sand, 2);
             }
-            level.setBlock(surfacePos, surfaceState, 2);
+            return;
+        }
+        if (exposedCeiling) {
+            level.setBlock(pos, sandstone, 2);
         }
     }
 
-    private static final float SURFACE_RELIEF = 2.0F;
+    private static final float SURFACE_RELIEF = 2.5F;
 
     float getThreshold(int y, int seaLevel, int islandHeight) {
         float plateauBase = islandHeight - SURFACE_RELIEF;

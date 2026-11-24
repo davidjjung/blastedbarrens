@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "blasted_barrens:ashen_sandstone"
-  },
-  "result": "blasted_barrens:ashen_sandstone_stairs"
-}

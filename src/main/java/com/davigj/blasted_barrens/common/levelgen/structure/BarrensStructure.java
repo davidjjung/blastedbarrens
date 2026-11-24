@@ -67,7 +67,7 @@ public class BarrensStructure extends Structure {
     }
 
     protected int getRadius(GenerationContext ctx) {
-        return ctx.random().nextInt(48, 72);
+        return ctx.random().nextInt(64, 72);
     }
 
     @Override

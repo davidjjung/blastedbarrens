@@ -5,10 +5,11 @@
   "minVersion": "0.8",
   "refmap": "blasted_barrens.refmap.json",
   "mixins": [
-    "BlockEntityTypeMixin",
-    "BubbleColumnBlockMixin",
     "LevelChunkSectionAccessor",
     "LocateCommandMixin",
+    "MultiNoiseBiomeSourceMixin",
+    "MultiNoiseBiomeSourceParameterListMixin",
+    "OverworldBiomeBuilderMixin",
     "VanillaRegistriesMixin"
   ],
   "client": [

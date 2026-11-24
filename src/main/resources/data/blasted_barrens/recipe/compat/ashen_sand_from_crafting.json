@@ -1,0 +1,42 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "supplementaries"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "c:ash"
+    },
+    {
+      "tag": "c:ash"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:sands/colorless"
+    },
+    {
+      "tag": "c:sands/colorless"
+    }
+  ],
+  "result": {
+    "id": "blasted_barrens:ashen_sand",
+    "count": 6
+  }
+}

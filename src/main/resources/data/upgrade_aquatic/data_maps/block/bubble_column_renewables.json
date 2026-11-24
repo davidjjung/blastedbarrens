@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": {
+    "blasted_barrens:ashen_sandstone": {
+      "falling_block": "blasted_barrens:ashen_sand"
+    }
+  }
+}

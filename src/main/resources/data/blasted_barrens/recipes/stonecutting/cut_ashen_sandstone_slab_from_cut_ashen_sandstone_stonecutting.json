@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "blasted_barrens:cut_ashen_sandstone"
-  },
-  "result": "blasted_barrens:cut_ashen_sandstone_slab"
-}
