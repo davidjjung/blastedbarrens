@@ -4,12 +4,10 @@ import com.davigj.blasted_barrens.common.block.AshenSandBlock;
 import com.davigj.blasted_barrens.common.block.ScorchedGrassBlock;
 import com.davigj.blasted_barrens.common.block.SingedBushBlock;
 import com.davigj.blasted_barrens.core.BlastedBarrens;
-import com.teamabnormals.atmospheric.core.registry.AtmosphericSoundEvents;
 import com.teamabnormals.blueprint.core.util.PropertyUtil;
 import com.teamabnormals.blueprint.core.util.item.CreativeModeTabContentsPopulator;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
 import com.teamabnormals.blueprint.core.util.registry.ItemSubRegistryHelper;
-import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.ColorRGBA;
 import net.minecraft.world.flag.FeatureFlag;
@@ -20,8 +18,6 @@ import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.function.Supplier;
 
 import static net.minecraft.world.item.CreativeModeTabs.BUILDING_BLOCKS;

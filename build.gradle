@@ -48,18 +48,13 @@ dependencies {
     implementation "net.neoforged:neoforge:${project.neoforge}"
     implementation("maven.modrinth:blueprint:5JOCYuQM")
 
-    implementation("maven.modrinth:spawn-mod:OgmUYgeL")
-    implementation("maven.modrinth:teallib:lZTBRemW")
+    compileOnly("maven.modrinth:pehkui:nKHizsl6")
 
-    implementation("maven.modrinth:upgrade-aquatic:7.0.2")
-    implementation("maven.modrinth:pehkui:nKHizsl6")
-
-    implementation("maven.modrinth:atmospheric:7.0.1")
-
-//    runtimeOnly("maven.modrinth:fog:c4ytB02Y")
-//    runtimeOnly("maven.modrinth:mru:Kpai1paZ")
-//    runtimeOnly("maven.modrinth:yacl:7TVdVtxF")
-//    runtimeOnly("maven.modrinth:architectury-api:xGfBrBzj")
+    runtimeOnly("maven.modrinth:upgrade-aquatic:7.0.2")
+    runtimeOnly("maven.modrinth:fog:c4ytB02Y")
+    runtimeOnly("maven.modrinth:mru:Kpai1paZ")
+    runtimeOnly("maven.modrinth:yacl:7TVdVtxF")
+    runtimeOnly("maven.modrinth:architectury-api:xGfBrBzj")
 
     compileOnly("mezz.jei:jei-${project.mc_version}-neoforge-api:${project.jei}")
     runtimeOnly("mezz.jei:jei-${project.mc_version}-neoforge:${project.jei}")
