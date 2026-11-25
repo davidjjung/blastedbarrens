@@ -29,8 +29,8 @@ public class BBBlocks {
     public static final ItemSubRegistryHelper ITEMS= BlastedBarrens.REGISTRY_HELPER.getItemSubHelper();
 
     public static final Supplier<Block> ASHEN_SAND = BLOCKS.createBlock("ashen_sand", () -> new AshenSandBlock(new ColorRGBA(5660253), BlockBehaviour.Properties.ofFullCopy(Blocks.GRAY_CONCRETE_POWDER)));
-    public static final Supplier<Block> SUSPICIOUS_ASHEN_SAND = BLOCKS.createBlock("suspicious_ashen_sand", () -> new BrushableBlock((Block)ASHEN_SAND.get(), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED, BlockBehaviour.Properties.of().mapColor(MapColor.SAND).instrument(NoteBlockInstrument.SNARE).strength(0.25F).sound(SoundType.SUSPICIOUS_SAND).pushReaction(PushReaction.DESTROY)));
-    public static final Supplier<Block> SINGED_BUSH = BLOCKS.createBlock("singed_bush", () -> new SingedBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEAD_BUSH)));
+    public static final Supplier<Block> SUSPICIOUS_ASHEN_SAND = BLOCKS.createBlock("suspicious_ashen_sand", () -> new BrushableBlock((Block)ASHEN_SAND.get(), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.SNARE).strength(0.25F).sound(SoundType.SUSPICIOUS_SAND).pushReaction(PushReaction.DESTROY)));
+    public static final Supplier<Block> SINGED_BUSH = BLOCKS.createBlock("singed_bush", () -> new SingedBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DEAD_BUSH).mapColor(MapColor.COLOR_GRAY)));
     public static final DeferredBlock<Block> POTTED_SINGED_BUSH = BLOCKS.createBlockNoItem("potted_singed_bush", () -> new FlowerPotBlock((Block)SINGED_BUSH.get(), PropertyUtil.flowerPot(new FeatureFlag[0])));
 
     public static final Supplier<Block> SCORCHED_GRASS = BLOCKS.createBlock("scorched_grass", () -> new ScorchedGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SHORT_GRASS).offsetType(BlockBehaviour.OffsetType.XZ)));
